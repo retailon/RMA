@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Retailon_Stock>
+            <version>0.1.0</version>
+        </Retailon_Stock>
+    </modules>
+    <global>
+        <models>
+            <retailon_stock>
+                <class>Retailon_Stock_Model</class>
+                <resourceModel>retailon_stock_resource</resourceModel>
+            </retailon_stock>
+            <retailon_stock_resource>
+                <class>Retailon_Stock_Model_Resource</class>
+            </retailon_stock_resource>
+            <cataloginventory>
+                <rewrite>
+                    <source_stock>Retailon_Stock_Model_CatalogInventory_Source_Stock</source_stock>
+                </rewrite>
+            </cataloginventory>
+        </models>
+        <blocks>
+            <retailon_stock>
+                <class>Retailon_Stock_Block</class>
+            </retailon_stock>
+        </blocks>
+        <helpers>
+            <retailon_stock>
+                <class>Retailon_Stock_Helper</class>
+            </retailon_stock>
+        </helpers>
+    </global>
+</config>
